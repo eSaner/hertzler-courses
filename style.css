@@ -1,0 +1,114 @@
+/*
+ Theme Name:   Hertzler Courses
+ Description:  GeneratePress child theme.
+ Author:       Eric Saner
+ Author URI:   https://esaner.com
+ Template:     generatepress
+ Text Domain:  hetzler
+*/
+
+/**
+ * Header
+ */
+
+.site-header {
+  background-color: #393839;
+}
+
+.inside-header {
+  padding-bottom: 4rem;
+}
+
+.main-title a,
+.main-title a:hover,
+.main-title a:visited {
+  color: #fff;
+}
+
+.site-logo {
+ margin-bottom: 12vw !important;
+}
+
+.site-branding {
+  position: absolute;
+  top: 36vw;
+}
+
+.site-description {
+  font-size: 1.25rem;
+}
+
+/**
+ * Primary Nav
+ */
+
+.main-navigation .main-nav ul li > a {
+  background-color: #393839 !important;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main-navigation .main-nav ul li > a:hover, .main-navigation .main-nav ul li.sfHover > a {
+  color: #b6b6b6;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+  color: #f8be6e;
+}
+
+/**
+ * Main
+ */
+
+.site-main,
+.sidebar > div {
+  margin-top: 0 !important;
+}
+
+.site-main .inside-article {
+  padding-top: 0;
+}
+
+header.entry-header {
+  margin: 0 -30px;
+  background: linear-gradient(to right, #efefef, #fcc477 10%, #ecb161 25%, #ecb161 75%, #fcc477 90%, #efefef);
+}
+
+header .entry-title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+  padding: 1rem 40px;
+}
+
+@media (min-width: 454px) {
+  .site-logo {
+     margin-bottom: 4rem !important;
+  }
+
+  .site-branding {
+    top: 10.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .inside-header {
+    padding-bottom: 4rem;
+  }
+
+  .site-logo {
+    margin-bottom: 0 !important;
+  }
+
+  .site-branding {
+    top: unset;
+    bottom: 2rem;
+  }
+
+  header.entry-header {
+    margin: 0 -40px;
+  }
+}
